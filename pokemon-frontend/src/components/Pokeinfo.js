@@ -38,10 +38,11 @@ function Pokeinfo(props) {
     const properties = (Object.entries(data.base));
     // console.log(properties);
 
-    const btnChoose = () => {
-        console.log(`Choosed Pokemon: ${data.id}`);
-        console.log(`Choosed Pokemon: ${data.name.english}`);
-    }
+    // const btnChoose = () => {
+    //     console.log(`Choosed Pokemon: ${data.id}`);
+    //     console.log(`Choosed Pokemon: ${data.name.english}`);
+    //     console.log(data);
+    // }
 
 
     return (
@@ -75,7 +76,7 @@ function Pokeinfo(props) {
                     </div>
                 </CardContent>
                 <CardActions>
-                    <Button size="small" onClick={btnChoose} >Choose to fight with</Button>
+                    <Button size="small" onClick={() => props.onSelect(data)} >Choose to fight with</Button>
                 </CardActions>
             </Card>
         </div>
