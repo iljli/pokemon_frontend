@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import CssBaseline from '@mui/material/CssBaseline';
+// needed: npm i @emotion/styled @emotion/core
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <React.Fragment>
+      <CssBaseline />
+      <App />
+    </React.Fragment>
   </React.StrictMode>,
   document.getElementById('root')
 );

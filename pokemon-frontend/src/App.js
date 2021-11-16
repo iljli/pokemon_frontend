@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
+
 import Pokemon from './components/Pokemon';
 import Pokelist from './components/Pokelist';
 
 function App() {
   return (
     <div className="App">
+
       <Router>
         <div>
           <nav>
@@ -31,6 +33,7 @@ function App() {
           </Route>
         </div>
       </Router>
+
     </div>
   );
 }
